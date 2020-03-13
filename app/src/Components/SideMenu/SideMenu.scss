@@ -1,0 +1,153 @@
+@keyframes cssAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+#body-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#sidebar-container {
+  min-height: 100vh;
+  padding: 0;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: width 300ms ease-in-out;
+  position: fixed;
+  a {
+    text-decoration: none;
+  }
+}
+.cursor {
+  cursor: pointer;
+}
+.page-context {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.sidebar-expanded {
+  width: 230px;
+  .dropDownButton {
+    width: 100%;
+    padding: 0px !important;
+  }
+}
+.dropdown-menu.show {
+  margin: 5px;
+}
+
+.dropDownButton {
+  padding: 0px !important;
+}
+.sidebar-collapsed {
+  width: 60px;
+  .dropDownButton {
+    width: 100%;
+  }
+}
+.collapsed-text {
+  animation: cssAnimation 0s 200ms forwards;
+  opacity: 0;
+}
+
+.sidebar-items {
+  height: 32px;
+}
+
+.sidebar-content {
+  width: 70px !important;
+}
+
+#sidebar-container .list-group a {
+  height: 50px;  
+  font-weight: 500;
+}
+
+#sidebar-container .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+}
+
+#sidebar-container
+  .list-group
+  .list-group-item[aria-expanded="false"]
+  .submenu-icon::after {
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+#sidebar-container
+  .list-group
+  .list-group-item[aria-expanded="true"]
+  .submenu-icon::after {
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
+}
+
+.subItem {
+  padding: 10px 69px 10px 10px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+.subItem :hover {
+  font-weight: 700 !important;
+ 
+}
+.list-group-item {
+  border: none !important;
+  padding: 10px 0px 10px 20px !important;
+}
+.btn-secondary {
+  border: none !important;
+  background-color: transparent !important;
+  color: black !important;
+}
+.btn :hover {
+  font-weight: 700;
+}
+.btn :focus {
+  font-weight: 700;
+}
+
+.btn {
+  min-width: 60px;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.btn-secondary:focus {
+  box-shadow: none !important;
+  background-color: #f8f9fa;
+}
+.select {
+  font-weight: 700 !important;
+}
+.sidebar-collapse {
+  bottom: 0 !important;
+  position: absolute !important;
+  font-weight: 600 !important;
+  z-index: 2;
+}
+
+.dropright {
+  padding: 0px !important;
+  width: 100%;
+}
+
+.title {
+  font-size: 30px;
+  font-family: serif;
+}
+
+.dropDownItem > .subItemNav {
+  background: rgba(0, 0, 0, 0.04);
+}

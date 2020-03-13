@@ -1,0 +1,26 @@
+.dropDownButton{
+    padding: 0px!important;
+  
+}
+.icon-space{
+    margin-right : 20px;  
+}
+.dropDownHeader{
+    font-size : 20px!important;
+}
+.dropdown-header{
+    color : black!important;
+    font-weight: 600!important;
+}
+
+.main-menu{
+    & + .sub-menu{
+        display:none;
+    }
+&.highlight {
+    & + .sub-menu {
+        display:block;
+        
+    }
+}
+}
